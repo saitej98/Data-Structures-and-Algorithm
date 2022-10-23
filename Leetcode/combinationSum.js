@@ -6,7 +6,6 @@
 
 const combinationSum = (candidates, target) => {
   let result = [];
-
   const dfs = (i = 0, sum = 0, arr = []) => {
     if (sum > target) return;
     if (sum === target) return result.push([...arr]);
